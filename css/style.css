@@ -1,0 +1,80 @@
+:root {
+    --darkblue: #004C93;
+    --blue: #0E61AB;
+    --lightblue: #E1EEFB;
+    --lightblue2: #F3F9FF;
+    --green: #3AB9B8;
+    --red: #EA1749;
+    --yellow: #FFD601;
+    --gray: #363F44;
+    --black: #000000;
+    --white: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 370px;
+    background-color: var(--lightblue);
+}
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 106px;
+}.city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.city_name {
+    margin-left: 8px;
+    color: var(--blue);
+    border-bottom: 1px dotted var(--blue);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+.contact a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--black);
+}
+.call {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: var(--blue);
+}
+.call_img_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    background-color: var(--yellow);
+    border-radius: 100%;
+}
+.call_text {
+    margin-left: 13px;
+    border-bottom: 1px dotted var(--blue);
+}
+
+nav a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 10px;
+    color: var(--blue);
+}
