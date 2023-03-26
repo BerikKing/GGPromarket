@@ -11,6 +11,7 @@
     --lightgray: #BCC0C2;
     --black: #000000;
     --white: #ffffff;
+    
 }
 * {
     margin: 0;
@@ -165,7 +166,114 @@ nav a {
     height: 22px;
     left: 173px;
     top: -12px;
+    
 }
 .menu_bar_account_user, .menu_bar_account_heart, .menu_bar_account_basket {
     display: flex;
 }
+.banner {
+    margin: -190px;
+}
+.banner_wrapper {
+    height: 380px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "slider slider banner_top"
+                        "slider slider banner_bottom";
+}
+.slider {
+    grid-area: slider;
+    position: relative;
+    background: var(--darkblue);
+    max-width: 867px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* .slider-container {
+    display: flex;
+   
+} */
+.slider_title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.15em;
+    color: var(--white);
+    margin: 0 104px 13px 0;
+}
+.slider_descr {
+    margin-bottom: 31px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--white);
+}
+.slider_btn {
+    width: 162px;
+    height: 52px;
+    background: var(--yellow);
+    border: none;
+    border-radius: 5px;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.prev {
+    left: 20px;
+  }
+  
+.next {
+    right: 20px;
+}
+
+.banner_top {
+    grid-area: banner_top;
+    background: var(--blue);
+    max-width: 433px;
+    
+}
+
+
+.banner_bottom {
+    grid-area: banner_bottom;
+    background: var(--green);
+    max-width: 433px;
+}
+.banner_top, .banner_bottom {
+    padding-right: 86px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.banner_bottom_title, .banner_top_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--white);
+}
+.banner_bottom_link, .banner_top_link {
+    margin-top: 13px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.15em;
+    color: var(--white);
+}
+
+
+  
+  
+  
+  
+  
+  
+  
+  
