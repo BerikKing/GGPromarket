@@ -1,12 +1,14 @@
 :root {
     --darkblue: #004C93;
     --blue: #0E61AB;
+    --blue2: #2C7BC7;
     --lightblue: #E1EEFB;
     --lightblue2: #F3F9FF;
     --green: #3AB9B8;
     --red: #EA1749;
     --yellow: #FFD601;
     --gray: #363F44;
+    --lightgray: #BCC0C2;
     --black: #000000;
     --white: #ffffff;
 }
@@ -54,7 +56,6 @@ header {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    
     color: var(--blue);
 }
 .call_img_inner {
@@ -77,4 +78,94 @@ nav a {
     line-height: 17px;
     margin-left: 10px;
     color: var(--blue);
+}
+.menu_bar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+    position: absolute;
+    top: 105px;
+}
+.menu_bar_wrapper {
+    display: grid;
+    grid-template-columns: 296px 121px 137px 506px 240px;
+    /* grid-template-columns: 30% 12% 14% 75% 24%; */
+}
+.menu_bar_catalog {
+    height: 60px;
+    background: var(--darkblue);
+    color: var(--lightgray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu_bar_catalog_span {
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu_bar_catalog_span span {
+    width: 24px;
+    height: 2px;
+    background: var(--lightgray);
+}
+.menu_bar_promotion, .menu_bar_brend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--lightgray);
+}
+.menu_bar_promotion {
+    height: 60px;
+    background: var(--blue);
+}
+.menu_bar_brend {
+    height: 60px;
+    background: var(--blue2);
+}
+.menu_bar_search {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    align-items: center;
+    background: var(--white);
+}
+.menu_bar_search_icon {
+    display: flex;
+    align-items: center;
+}
+.menu_bar_account {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #F1F8FF;
+    position: relative;
+}
+.menu_bar_account_user::before, .menu_bar_account_basket::before {
+    content: '2';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 104px;
+    top: -12px;
+    border-radius: 100%;
+    background: var(--yellow);
+    color: var(--darkblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu_bar_account_basket::before {
+    content: '4';
+    width: 22px;
+    height: 22px;
+    left: 173px;
+    top: -12px;
+}
+.menu_bar_account_user, .menu_bar_account_heart, .menu_bar_account_basket {
+    display: flex;
 }
