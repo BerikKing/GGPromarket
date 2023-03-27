@@ -172,7 +172,7 @@ nav a {
     display: flex;
 }
 .banner {
-    margin: -190px;
+    margin-top: -190px;
 }
 .banner_wrapper {
     height: 380px;
@@ -268,7 +268,9 @@ nav a {
     color: var(--white);
 }
 
-
+.loader {
+    
+}
   
   
   
