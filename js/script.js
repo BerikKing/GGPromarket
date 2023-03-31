@@ -29,3 +29,19 @@ let loader = document.querySelector('.loader')
 setTimeout(function(){
   loader.style.display = "none"
 },3000)
+
+let hits = $('.hits');
+
+hits.slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  arrows: true,
+  autoplaySpeed: 2000,
+
+});
+// $('.hits').slick({
+//   infinite: true,
+//   slidesToShow: 4,
+//   slidesToScroll: 3
+// });
