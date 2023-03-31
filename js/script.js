@@ -33,11 +33,12 @@ setTimeout(function(){
 let hits = $('.hits');
 
 hits.slick({
+  infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
   arrows: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 1000,
 
 });
 // $('.hits').slick({

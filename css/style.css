@@ -438,10 +438,8 @@ nav a {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  border-right: 0.02px solid var(--black);
-}
-.hit_cards:last-child {
-  border-right: none;
+  border-right: 0.01px solid var(--black);
+  border-left: 0.01px solid var(--black);
 }
 .hit_cards_pro {
   width: 49px;
