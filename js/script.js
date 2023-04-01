@@ -18,21 +18,18 @@ prevBtn.addEventListener("click", () => {
   }
 });
 
-
-
-
-let loader = document.querySelector('.loader')
+let loader = document.querySelector(".loader");
 
 // window.addEventListener('load',function (){
 //   loader.style.display = "none";
 // })
-setTimeout(function(){
-  loader.style.display = "none"
-},3000)
+setTimeout(function () {
+  loader.style.display = "none";
+}, 3000);
 
-let hits = $('.hits');
-let pro = $('.promotions');
-let art = $('.article_wrapper');
+let hits = $(".hits");
+let pro = $(".promotions");
+let article = $(".article_wrapper");
 
 pro.slick({
   infinite: true,
@@ -40,7 +37,6 @@ pro.slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 1000,
-
 });
 hits.slick({
   infinite: true,
@@ -48,16 +44,15 @@ hits.slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 1000,
-
 });
-art.slick({
+article.slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
-  // autoplay: true,
-  // autoplaySpeed: 2000,
-
+  autoplay: true,
+  autoplaySpeed: 2000,
 });
+
 // $('.hits').slick({
 //   infinite: true,
 //   slidesToShow: 4,

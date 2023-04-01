@@ -1,863 +1,1124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GGPromarket</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/slick.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="header_inner">
-          <div class="logo">
-            <img src="/icons/logo.png" alt="logo" />
-          </div>
-          <div class="city">
-            <img src="/icons/location.svg" alt="location" />
-            <div class="city_name">Москва</div>
-          </div>
-          <div class="contact">
-            <a href="tel:84950183210">8 495 018-32-10</a>
-          </div>
-          <div class="call">
-            <div class="call_img_inner">
-              <img class="call_img" src="/icons/down.svg" alt="" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GGPromarket</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/slick.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header_inner">
+                    <div class="logo">
+                        <img src="/icons/logo.png" alt="logo" />
+                    </div>
+                    <div class="city">
+                        <img src="/icons/location.svg" alt="location" />
+                        <div class="city_name">Москва</div>
+                    </div>
+                    <div class="contact">
+                        <a href="tel:84950183210">8 495 018-32-10</a>
+                    </div>
+                    <div class="call">
+                        <div class="call_img_inner">
+                            <img
+                                class="call_img"
+                                src="/icons/down.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="call_text">Заказать звонок</div>
+                    </div>
+                    <nav>
+                        <a classh="nav_link" ref="#">Оплата</a>
+                        <a classh="nav_link" ref="#">Доставка</a>
+                        <a classh="nav_link" ref="#">Поставщикам</a>
+                        <a classh="nav_link" ref="#">Статьи</a>
+                        <a classh="nav_link" ref="#">Контакты</a>
+                    </nav>
+                </div>
             </div>
-            <div class="call_text">Заказать звонок</div>
-          </div>
-          <nav>
-            <a classh="nav_link" ref="#">Оплата</a>
-            <a classh="nav_link" ref="#">Доставка</a>
-            <a classh="nav_link" ref="#">Поставщикам</a>
-            <a classh="nav_link" ref="#">Статьи</a>
-            <a classh="nav_link" ref="#">Контакты</a>
-          </nav>
+        </header>
+
+        <section class="menu_bar">
+            <div class="container">
+                <div class="menu_bar_wrapper">
+                    <div class="menu_bar_catalog">
+                        <div class="menu_bar_catalog_span">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="menu_bar_catalog_title">
+                            КАТАЛОГ ТОВАРОВ
+                        </div>
+                    </div>
+                    <div class="menu_bar_promotion">АКЦИИ</div>
+                    <div class="menu_bar_brend">БРЕНДЫ</div>
+                    <div class="menu_bar_search">
+                        <div class="menu_bar_search_title">Что вы ищете?</div>
+                        <div class="menu_bar_search_icon">
+                            <img src="/icons/search.svg" alt="search" />
+                        </div>
+                    </div>
+                    <div class="menu_bar_account">
+                        <div class="menu_bar_account_user">
+                            <img src="/icons/user.svg" alt="user" />
+                        </div>
+                        <div class="menu_bar_account_heart">
+                            <img src="/icons/heart.svg" alt="heart" />
+                        </div>
+                        <div class="menu_bar_account_basket">
+                            <img src="/icons/basket.svg" alt="basket" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner">
+            <div class="container">
+                <div class="banner_wrapper">
+                    <div class="slider">
+                        <div class="slider-container">
+                            <div class="slider-container_inner">
+                                <h1 class="slider_title">
+                                    СМЕСИТЕЛИ <br />
+                                    RAIBER
+                                </h1>
+                                <div class="slider_descr">уже в наличии</div>
+                                <button class="slider_btn">ПОДРОБНЕЕ</button>
+                            </div>
+
+                            <!-- <div class="slider_container_inner">
+								<h1 class="slider_title">
+									Акриловая ванна
+								</h1>
+								<div class="slider_descr">уже в наличии</div>
+								<button class="slider_btn">ПОДРОБНЕЕ</button>
+							</div>
+
+							<div class="slider_container_inner">
+								<h1 class="slider_title">
+									Раковина Roca Debba
+								</h1>
+								<div class="slider_descr">уже в наличии</div>
+								<button class="slider_btn">ПОДРОБНЕЕ</button>
+							</div> -->
+                        </div>
+                        <button class="prev">
+                            <img src="/icons/prev.svg" alt="prev" />
+                        </button>
+                        <button class="next">
+                            <img src="/icons/next.svg" alt="next" />
+                        </button>
+                    </div>
+                    <div class="banner_top">
+                        <div class="banner_top_inner">
+                            <div class="banner_top_title">
+                                УНИТАЗЫ <br />
+                                ДО 10 000 ₽
+                            </div>
+                            <a class="banner_top_link" href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                    <div class="banner_bottom">
+                        <div class="banner_top_inner">
+                            <div class="banner_bottom_title">
+                                ТОВАРЫ <br />
+                                СО СКИДКОЙ
+                            </div>
+                            <a class="banner_bottom_link" href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages_wrapper">
+                    <div class="advantages_inner">
+                        <img
+                            class="advantages_img"
+                            src="/icons/devilever.svg"
+                        />
+                        <div class="advantages_descr">
+                            Быстрая доставка<br />
+                            по Москве и в любой<br />
+                            регион России
+                        </div>
+                    </div>
+
+                    <div class="advantages_inner">
+                        <img class="advantages_img" src="/icons/safe.svg" />
+                        <div class="advantages_descr">
+                            Все товары имеют<br />
+                            официальную гарантию<br />
+                            производителя
+                        </div>
+                    </div>
+
+                    <div class="advantages_inner">
+                        <img class="advantages_img" src="/icons/goods.svg" />
+                        <div class="advantages_descr">
+                            Более 100 000 товаров
+                        </div>
+                    </div>
+
+                    <div class="advantages_inner">
+                        <img class="advantages_img" src="/icons/ruble.svg" />
+                        <div class="advantages_descr">Любой способ оплаты</div>
+                    </div>
+
+                    <div class="advantages_inner">
+                        <img class="advantages_img" src="/icons/like.png" />
+                        <div class="advantages_descr">
+                            Высокие оценки клиентов
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection">
+            <div class="container">
+                <div class="colletion_title">Коллекции плитки</div>
+                <div class="collection_wrapper">
+                    <div class="collection_inner coll1">
+                        <!-- <img src="/img/coll1.jpeg"class="collection_img"> -->
+                        <div class="collection_inner_title">Сияние</div>
+                        <div class="collection_inner_name">Kerama Marazzi</div>
+                    </div>
+
+                    <div class="collection_inner coll2">
+                        <!-- <img src="/img/coll2.jpeg"class="collection_img"> -->
+                        <div class="collection_inner_title">Вестанвинд</div>
+                        <div class="collection_inner_name">LB-Ceramics</div>
+                    </div>
+
+                    <div class="collection_inner coll3">
+                        <!-- <img src="/img/coll3.jpeg"class="collection_img"> -->
+                        <div class="collection_inner_title">Rotterdam</div>
+                        <div class="collection_inner_name">Gracia Ceramica</div>
+                    </div>
+
+                    <div class="collection_inner coll4">
+                        <!-- <img src="/img/coll4.jpeg"class="collection_img"> -->
+                        <div class="collection_inner_title">Rane</div>
+                        <div class="collection_inner_name">Alma Ceramica</div>
+                    </div>
+
+                    <div class="collection_inner coll5">
+                        <!-- <img src="/img/coll5.jpeg"class="collection_img"> -->
+                        <div class="collection_inner_title">Гинардо</div>
+                        <div class="collection_inner_name">Kerama Marazzi</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hit">
+            <div class="container">
+                <div class="colletion_title hit_title">Хиты продаж</div>
+
+                <div class="hit_nav">
+                    <a href="#" class="hit_nav_link">Любые товары</a>
+                    <a href="#" class="hit_nav_link">Раковины</a>
+                    <a href="#" class="hit_nav_link">Ванны</a>
+                    <a href="#" class="hit_nav_link">Унитазы</a>
+                    <a href="#" class="hit_nav_link">Душевые системы</a>
+                    <a href="#" class="hit_nav_link">Смесители</a>
+                    <a href="#" class="hit_nav_link">Зеркала</a>
+                    <a href="#" class="hit_nav_link">Душевые кабины</a>
+                    <a href="#" class="hit_nav_link">Стиральные машины</a>
+                </div>
+
+                <div class="hits">
+                    <div class="hit_cards">
+                        <div class="hit_cards_img hit_cards_img_1">
+                            <div class="hit_cards_pro">хит</div>
+                            <!-- <img src="/img/sink.png"> -->
+                        </div>
+                        <div class="hit_cards_bottom">
+                            <div class="hit_cards_rating">
+                                <div class="hit_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="hit_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="hit_cards_comment-num">2</div>
+                                </div>
+                            </div>
+                            <a href="#" class="hit_cards_name">
+                                Раковина Roca Debba 32799400Y, 60x48 см
+                            </a>
+
+                            <div class="hit_cards_country">Испания</div>
+                            <div class="hit_cards_price">
+                                <div class="hit_cards_price_left">2 601 ₽</div>
+                                <button class="hit_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hit_cards">
+                        <div class="hit_cards_img hit_cards_img_2">
+                            <div class="hit_cards_pro">хит</div>
+                            <!-- <img src="/img/bath.png"> -->
+                        </div>
+                        <div class="hit_cards_bottom">
+                            <div class="hit_cards_rating">
+                                <div class="hit_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="hit_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="hit_cards_comment-num">12</div>
+                                </div>
+                            </div>
+                            <a href="#" class="hit_cards_name">
+                                Акриловая ванна AM.PM Bliss L 180х80
+                                W53A-180-080W-ARB
+                            </a>
+
+                            <div class="hit_cards_country">Германия</div>
+                            <div class="hit_cards_price">
+                                <div class="hit_cards_price_left">26 990 ₽</div>
+                                <button class="hit_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hit_cards">
+                        <div class="hit_cards_img hit_cards_img_3">
+                            <div class="hit_cards_pro">хит</div>
+                            <!-- <img src="/img/sink.png"> -->
+                        </div>
+                        <div class="hit_cards_bottom">
+                            <div class="hit_cards_rating">
+                                <div class="hit_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="hit_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="hit_cards_comment-num">24</div>
+                                </div>
+                            </div>
+                            <a href="#" class="hit_cards_name">
+                                Душевая система Raiber R0808, хром
+                            </a>
+
+                            <div class="hit_cards_country">Германия</div>
+                            <div class="hit_cards_price">
+                                <div class="hit_cards_price_left">12 207 ₽</div>
+                                <button class="hit_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hit_cards">
+                        <div class="hit_cards_img hit_cards_img_4">
+                            <div class="hit_cards_pro">хит</div>
+                            <!-- <img src="/img/sink.png"> -->
+                        </div>
+                        <div class="hit_cards_bottom">
+                            <div class="hit_cards_rating">
+                                <div class="hit_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="hit_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="hit_cards_comment-num">4</div>
+                                </div>
+                            </div>
+                            <a href="#" class="hit_cards_name">
+                                Унитаз AM.PM Spirit V2.0 C708607SC компакт с
+                                сиденьем микролифт
+                            </a>
+
+                            <div class="hit_cards_country">Испания</div>
+                            <div class="hit_cards_price">
+                                <div class="hit_cards_price_left">14 764 ₽</div>
+                                <button class="hit_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hit_cards">
+                        <div class="hit_cards_img hit_cards_img_5">
+                            <div class="hit_cards_pro">хит</div>
+                            <!-- <img src="/img/sink.png"> -->
+                        </div>
+                        <div class="hit_cards_bottom">
+                            <div class="hit_cards_rating">
+                                <div class="hit_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="hit_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="hit_cards_comment-num">10</div>
+                                </div>
+                            </div>
+                            <a href="#" class="hit_cards_name">
+                                Полотенцесушитель электрический Laris Кватро П7
+                                40 x 60 см, 85 Вт, со...
+                            </a>
+
+                            <div class="hit_cards_country">Россия, Украина</div>
+                            <div class="hit_cards_price">
+                                <div class="hit_cards_price_left">12 730 ₽</div>
+                                <button class="hit_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hit_cards">
+                        <div class="hit_cards_img hit_cards_img_4">
+                            <div class="hit_cards_pro">хит</div>
+                            <!-- <img src="/img/sink.png"> -->
+                        </div>
+                        <div class="hit_cards_bottom">
+                            <div class="hit_cards_rating">
+                                <div class="hit_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="hit_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="hit_cards_comment-num">4</div>
+                                </div>
+                            </div>
+                            <a href="#" class="hit_cards_name">
+                                Унитаз AM.PM Spirit V2.0 C708607SC компакт с
+                                сиденьем микролифт
+                            </a>
+                            <div class="hit_cards_country">Испания</div>
+                            <div class="hit_cards_price">
+                                <div class="hit_cards_price_left">14 764 ₽</div>
+                                <button class="hit_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hit_cards">
+                        <div class="hit_cards_img hit_cards_img_5">
+                            <div class="hit_cards_pro">хит</div>
+                            <!-- <img src="/img/sink.png"> -->
+                        </div>
+                        <div class="hit_cards_bottom">
+                            <div class="hit_cards_rating">
+                                <div class="hit_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="hit_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="hit_cards_comment-num">10</div>
+                                </div>
+                            </div>
+                            <a href="#" class="hit_cards_name">
+                                Полотенцесушитель электрический Laris Кватро П7
+                                40 x 60 см, 85 Вт, со...
+                            </a>
+
+                            <div class="hit_cards_country">Россия, Украина</div>
+                            <div class="hit_cards_price">
+                                <div class="hit_cards_price_left">12 730 ₽</div>
+                                <button class="hit_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="promotion">
+            <div class="container">
+                <div class="colletion_title promotion_title">Акции</div>
+
+                <div class="promotion_nav">
+                    <a href="#" class="promotion_nav_link">Любые товары</a>
+                    <a href="#" class="promotion_nav_link">Смесители</a>
+                    <a href="#" class="promotion_nav_link">Полотенцесушители</a>
+                    <a href="#" class="promotion_nav_link">Биде</a>
+                    <a href="#" class="promotion_nav_link">Душевые системы</a>
+                    <a href="#" class="promotion_nav_link">Ванны</a>
+                    <a href="#" class="promotion_nav_link">Унитазы</a>
+                    <a href="#" class="promotion_nav_link">Отопители</a>
+                    <a href="#" class="promotion_nav_link"
+                        >Посудомоечные машины</a
+                    >
+                </div>
+
+                <div class="promotions">
+                    <div class="promotion_cards">
+                        <div class="promotion_cards_img promotion_cards_img_1">
+                            <div class="promotion_cards_pro">акции</div>
+                            <!-- <img src="/img/sink.png"> -->
+                        </div>
+                        <div class="promotion_cards_bottom">
+                            <div class="promotion_cards_rating">
+                                <div class="promotion_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="promotion_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="promotion_cards_comment-num">
+                                        2
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="promotion_cards_name">
+                                Смеситель Hansgrohe Logis 71070000 для раковины
+                            </a>
+
+                            <div class="promotion_cards_country">Германия</div>
+                            <div class="promotion_cards_price">
+                                <div class="promotion_cards_price_flex">
+                                    <div class="promotion_cards_price_left">
+                                        6 050 ₽
+                                    </div>
+                                    <div
+                                        class="promotion_cards_price_left_crossOut"
+                                    >
+                                        7 601 ₽
+                                    </div>
+                                </div>
+                                <button class="promotion_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promotion_cards">
+                        <div class="promotion_cards_img promotion_cards_img_2">
+                            <div class="promotion_cards_pro">акции</div>
+                            <!-- <img src="/img/bath.png"> -->
+                        </div>
+                        <div class="promotion_cards_bottom">
+                            <div class="promotion_cards_rating">
+                                <div class="promotion_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="promotion_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="promotion_cards_comment-num">
+                                        12
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="promotion_cards_name">
+                                Душевая кабина Black&White Galaxy G8800, 80 x
+                                110 см
+                            </a>
+
+                            <div class="promotion_cards_country">Германия</div>
+                            <div class="promotion_cards_price">
+                                <div class="promotion_cards_price_flex">
+                                    <div class="promotion_cards_price_left">
+                                        84 000 ₽
+                                    </div>
+                                    <div
+                                        class="promotion_cards_price_left_crossOut"
+                                    >
+                                        90 580 ₽
+                                    </div>
+                                </div>
+                                <button class="promotion_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promotion_cards">
+                        <div class="promotion_cards_img promotion_cards_img_3">
+                            <div class="promotion_cards_pro">акции</div>
+                            <!-- <img src="/img/sink.png"> -->
+                        </div>
+                        <div class="promotion_cards_bottom">
+                            <div class="promotion_cards_rating">
+                                <div class="promotion_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="promotion_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="promotion_cards_comment-num">
+                                        24
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="promotion_cards_name">
+                                Ванна акриловая Am.Pm Spirit W72A-160L100W-A2,
+                                160 x 100 см, левосторонняя
+                            </a>
+
+                            <div class="promotion_cards_country">Германия</div>
+                            <div class="promotion_cards_price">
+                                <div class="promotion_cards_price_flex">
+                                    <div class="promotion_cards_price_left">
+                                        29 990 ₽
+                                    </div>
+                                    <div
+                                        class="promotion_cards_price_left_crossOut"
+                                    >
+                                        36 900 ₽
+                                    </div>
+                                </div>
+                                <button class="promotion_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promotion_cards">
+                        <div class="promotion_cards_img promotion_cards_img_4">
+                            <div class="promotion_cards_pro">акции</div>
+                            <!-- <img src="/img/sink.png"> -->
+                        </div>
+                        <div class="promotion_cards_bottom">
+                            <div class="promotion_cards_rating">
+                                <div class="promotion_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="promotion_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="promotion_cards_comment-num">
+                                        4
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="promotion_cards_name">
+                                Унитаз Laguraty 8074 крышка микролифт, с
+                                функцией биде
+                            </a>
+
+                            <div class="promotion_cards_country">Китай</div>
+                            <div class="promotion_cards_price">
+                                <div class="promotion_cards_price_flex">
+                                    <div class="promotion_cards_price_left">
+                                        32 108 ₽
+                                    </div>
+                                    <div
+                                        class="promotion_cards_price_left_crossOut"
+                                    >
+                                        34 900 ₽
+                                    </div>
+                                </div>
+                                <button class="promotion_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promotion_cards">
+                        <div class="promotion_cards_img promotion_cards_img_5">
+                            <div class="promotion_cards_pro">акции</div>
+                            <!-- <img src="/img/sink.png"> -->
+                        </div>
+                        <div class="promotion_cards_bottom">
+                            <div class="promotion_cards_rating">
+                                <div class="promotion_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="promotion_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="promotion_cards_comment-num">
+                                        10
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="promotion_cards_name">
+                                Раковина Laufen Palace 120 см 8.1170.4.000.104.1
+                            </a>
+
+                            <div class="promotion_cards_country">Швейцария</div>
+                            <div class="promotion_cards_price">
+                                <div class="promotion_cards_price_flex">
+                                    <div class="promotion_cards_price_left">
+                                        53 458 ₽
+                                    </div>
+                                    <div
+                                        class="promotion_cards_price_left_crossOut"
+                                    >
+                                        58 601 ₽
+                                    </div>
+                                </div>
+                                <button class="promotion_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promotion_cards">
+                        <div class="promotion_cards_img promotion_cards_img_4">
+                            <div class="promotion_cards_pro">акции</div>
+                            <!-- <img src="/img/sink.png"> -->
+                        </div>
+                        <div class="promotion_cards_bottom">
+                            <div class="promotion_cards_rating">
+                                <div class="promotion_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="promotion_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="promotion_cards_comment-num">
+                                        4
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="promotion_cards_name">
+                                Унитаз AM.PM Spirit V2.0 C708607SC компакт с
+                                сиденьем микролифт
+                            </a>
+
+                            <div class="promotion_cards_country">Испания</div>
+                            <div class="promotion_cards_price">
+                                <div class="promotion_cards_price_flex">
+                                    <div class="promotion_cards_price_left">
+                                        12 730 ₽
+                                    </div>
+                                    <div
+                                        class="promotion_cards_price_left_crossOut"
+                                    >
+                                        58 601 ₽
+                                    </div>
+                                </div>
+                                <button class="promotion_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promotion_cards">
+                        <div class="promotion_cards_img promotion_cards_img_5">
+                            <div class="promotion_cards_pro">акции</div>
+                            <!-- <img src="/img/sink.png"> -->
+                        </div>
+                        <div class="promotion_cards_bottom">
+                            <div class="promotion_cards_rating">
+                                <div class="promotion_cards_star">
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                    <img src="/icons/star.svg" />
+                                </div>
+                                <div class="promotion_cards_comment">
+                                    <img src="/icons/comment.svg" />
+                                    <div class="promotion_cards_comment-num">
+                                        10
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="promotion_cards_name">
+                                Полотенцесушитель электрический Laris Кватро П7
+                                40 x 60 см, 85 Вт, со...
+                            </a>
+
+                            <div class="promotion_cards_country">
+                                Россия, Украина
+                            </div>
+                            <div class="promotion_cards_price">
+                                <div class="promotion_cards_price_flex">
+                                    <div class="promotion_cards_price_left">
+                                        12 730 ₽
+                                    </div>
+                                    <div
+                                        class="promotion_cards_price_left_crossOut"
+                                    >
+                                        58 601 ₽
+                                    </div>
+                                </div>
+                                <button class="promotion_cards_price_right">
+                                    В КОРЗИНУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brends">
+            <div class="container">
+                <div class="brends_banner">ЕЩЕ ОДИН БАННЕР</div>
+                <div class="colletion_title brends_title">
+                    Популярные бренды
+                </div>
+
+                <div class="brends_container">
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_1.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_2.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_3.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_4.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_5.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_6.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_7.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_8.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_9.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_10.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_11.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_12.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_13.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_14.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_15.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_16.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_17.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                    <div class="brends_inner">
+                        <img
+                            src="/icons/brend_18.svg"
+                            class="brends_inner_img"
+                        />
+                    </div>
+                </div>
+
+                <div class="article">
+                    <div class="colletion_title article_title">Статьи</div>
+
+                    <div class="article_wrapper">
+                        <div class="article_inner">
+                            <div class="article_img">
+                                <img src="/img/article_img-1.jpeg" />
+                            </div>
+                            <div class="article_descr">
+                                Актуальные и необычные аксессуары для ванной
+                                комнаты
+                            </div>
+                        </div>
+
+                        <div class="article_inner">
+                            <div class="article_img">
+                                <img src="/img/article_img-2.jpeg" />
+                            </div>
+                            <div class="article_descr">
+                                Какой температуры должна быть горячая вода?
+                            </div>
+                        </div>
+
+                        <div class="article_inner">
+                            <div class="article_img">
+                                <img src="/img/article_img-3.jpeg" />
+                            </div>
+                            <div class="article_descr">
+                                Конденсат на бачке унитаза: причины появления и
+                                способы устранения
+                            </div>
+                        </div>
+
+                        <div class="article_inner">
+                            <div class="article_img">
+                                <img src="/img/article_img-4.jpeg" />
+                            </div>
+                            <div class="article_descr">
+                                Анаэробный герметик для резьбовых соединений
+                            </div>
+                        </div>
+
+                        <div class="article_inner">
+                            <div class="article_img">
+                                <img src="/img/article_img-1.jpeg" />
+                            </div>
+                            <div class="article_descr">
+                                Актуальные и необычные аксессуары для ванной
+                                комнаты
+                            </div>
+                        </div>
+
+                        <div class="article_inner">
+                            <div class="article_img">
+                                <img src="/img/article_img-2.jpeg" />
+                            </div>
+                            <div class="article_descr">
+                                Какой температуры должна быть горячая вода?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seo">
+                    <div class="seo_left_img">
+                        <img src="/img/kitchen.jpeg" />
+                    </div>
+                    <div class="seo_text">
+                        <div class="seo_title">Блок SEO-текста про магазин</div>
+                        <div class="seo_descr">
+                            <div class="seo_descr_content">
+                                GG Promarket — крупный ритейлер сантехнического
+                                оборудования, плитки и аксессуаров. Мы нацелены
+                                на то, чтобы сделать процесс выбора и покупки
+                                сантехники максимально простым и интуитивно
+                                понятным. При создании и обновлении сайта
+                                santehnika-online.ru мы продумали логичную
+                                структуру каталога, организовали систему поиска,
+                                снабдили карточки товаров подробными описаниями
+                                и характеристиками. Выбирать оборудование в
+                                нашем магазине легко даже тем, кто впервые имеет
+                                дело с сантехникой. А уточнить детали и получить
+                                информацию о совместимости товаров круглосуточно
+                                помогут опытные консультанты нашего
+                                контакт-центра. С нами вы полюбите выбирать!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--finishContainer-->
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer_wrapper">
+                    <div class="footer_wrapper_1">
+                        <a class="footer_link" href="#">Плитка</a>
+                        <a class="footer_link" href="#">Сантехника</a>
+                        <a class="footer_link" href="#">Мебель для ванной</a>
+                        <a class="footer_link" href="#"
+                            >Электроника и бытовая техника</a
+                        >
+                        <a class="footer_link" href="#">Отопление</a>
+                        <a class="footer_link" href="#">Напольное покрытие</a>
+                        <a class="footer_logo" href="#">
+                            <img src="/icons/logo.png" />
+                        </a>
+                        <a class="footer_copy" href="#"
+                            >© 2020 ggpromarket.ru</a
+                        >
+                    </div>
+                    <div class="footer_wrapper_2">
+                        <a class="footer_link" href="#">Оплата</a>
+                        <a class="footer_link" href="#">Доставка</a>
+                        <a class="footer_link" href="#">Поставщикам</a>
+                        <a class="footer_link" href="#">Статьи</a>
+                        <a class="footer_link" href="#">Контакты</a>
+                    </div>
+                    <div class="footer_wrapper_3">
+                        <a class="footer_phone" href="tel:84950183210"
+                            >8 495 018-32-10</a
+                        >
+                        <button class="footer_btn">ЗАКАЗАТЬ ЗВОНОК</button>
+                        <div class="footer_workMode">Пн-Пт: 10:00 — 20:00</div>
+                        <div class="footer_workMode">Сб: 10:00 — 18:00</div>
+                        <div class="footer_workMode">Вс: выходной</div>
+
+                        <div class="social">
+                            <div class="social_img">
+                                <img src="/icons/whatsapp.svg" />
+                                <img src="/icons/instagam.svg" />
+                                <img src="/icons/telegram.svg" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer_wrapper_4">
+                        <div class="footer_address">Склад:</div>
+                        <div class="footer_address">
+                            Москва, ул. Салтыковская, 6 стр 11
+                        </div>
+                        <a
+                            class="footer_link"
+                            href="mailto:zakaz@ggpromarket.ru"
+                            >zakaz@ggpromarket.ru</a
+                        >
+                        <a class="footer_yandex" href="#">
+                            <img src="img/yandex_add.svg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copy_not">
+            <div class="container">
+                <div class="copy_not_text">
+                    Копирование всех составляющих частей сайта в какой бы то ни
+                    было форме без письменного разрешения владельцев авторских
+                    прав запрещено. Сайт носит исключительно информационный
+                    характер, и ни при каких условиях не является публичной
+                    офертой, определяемой положениями статьи 437(2) Гражданского
+                    кодекса Российской Федерации.Наличие и цены уточняйте у
+                    наших операторов. <br><br>
+                    Сайт использует технологию cookie.
+                    Используя сайт, Вы соглашаетесь с
+                    <span>правилами использования cookie,</span> а также даете
+                    <span>согласие на обработку персональных данных</span>
+                </div>
+            </div>
         </div>
-      </div>
-    </header>
 
-    <section class="menu_bar">
-      <div class="container">
-        <div class="menu_bar_wrapper">
-          <div class="menu_bar_catalog">
-            <div class="menu_bar_catalog_span">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="menu_bar_catalog_title">КАТАЛОГ ТОВАРОВ</div>
-          </div>
-          <div class="menu_bar_promotion">АКЦИИ</div>
-          <div class="menu_bar_brend">БРЕНДЫ</div>
-          <div class="menu_bar_search">
-            <div class="menu_bar_search_title">Что вы ищете?</div>
-            <div class="menu_bar_search_icon">
-              <img src="/icons/search.svg" alt="search" />
-            </div>
-          </div>
-          <div class="menu_bar_account">
-            <div class="menu_bar_account_user">
-              <img src="/icons/user.svg" alt="user" />
-            </div>
-            <div class="menu_bar_account_heart">
-              <img src="/icons/heart.svg" alt="heart" />
-            </div>
-            <div class="menu_bar_account_basket">
-              <img src="/icons/basket.svg" alt="basket" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="banner">
-      <div class="container">
-        <div class="banner_wrapper">
-          <div class="slider">
-            <div class="slider-container">
-              <div class="slider-container_inner">
-                <h1 class="slider_title">
-                  СМЕСИТЕЛИ <br />
-                  RAIBER
-                </h1>
-                <div class="slider_descr">уже в наличии</div>
-                <button class="slider_btn">ПОДРОБНЕЕ</button>
-              </div>
-
-              <!-- <div class="slider_container_inner">
-                <h1 class="slider_title">
-                  Акриловая ванна
-                </h1>
-                <div class="slider_descr">уже в наличии</div>
-                <button class="slider_btn">ПОДРОБНЕЕ</button>
-              </div>
-
-              <div class="slider_container_inner">
-                <h1 class="slider_title">
-                  Раковина Roca Debba
-                </h1>
-                <div class="slider_descr">уже в наличии</div>
-                <button class="slider_btn">ПОДРОБНЕЕ</button>
-              </div> -->
-            </div>
-            <button class="prev">
-              <img src="/icons/prev.svg" alt="prev" />
-            </button>
-            <button class="next">
-              <img src="/icons/next.svg" alt="next" />
-            </button>
-          </div>
-          <div class="banner_top">
-            <div class="banner_top_inner">
-              <div class="banner_top_title">
-                УНИТАЗЫ <br />
-                ДО 10 000 ₽
-              </div>
-              <a class="banner_top_link" href="#">ПОДРОБНЕЕ</a>
-            </div>
-          </div>
-          <div class="banner_bottom">
-            <div class="banner_top_inner">
-              <div class="banner_bottom_title">
-                ТОВАРЫ <br />
-                СО СКИДКОЙ
-              </div>
-              <a class="banner_bottom_link" href="#">ПОДРОБНЕЕ</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="advantages">
-      <div class="container">
-        <div class="advantages_wrapper">
-          <div class="advantages_inner">
-            <img class="advantages_img" src="/icons/devilever.svg" />
-            <div class="advantages_descr">
-              Быстрая доставка<br />
-              по Москве и в любой<br />
-              регион России
-            </div>
-          </div>
-
-          <div class="advantages_inner">
-            <img class="advantages_img" src="/icons/safe.svg" />
-            <div class="advantages_descr">
-              Все товары имеют<br />
-              официальную гарантию<br />
-              производителя
-            </div>
-          </div>
-
-          <div class="advantages_inner">
-            <img class="advantages_img" src="/icons/goods.svg" />
-            <div class="advantages_descr">Более 100 000 товаров</div>
-          </div>
-
-          <div class="advantages_inner">
-            <img class="advantages_img" src="/icons/ruble.svg" />
-            <div class="advantages_descr">Любой способ оплаты</div>
-          </div>
-
-          <div class="advantages_inner">
-            <img class="advantages_img" src="/icons/like.png" />
-            <div class="advantages_descr">Высокие оценки клиентов</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="collection">
-      <div class="container">
-        <div class="colletion_title">Коллекции плитки</div>
-        <div class="collection_wrapper">
-          <div class="collection_inner coll1">
-            <!-- <img src="/img/coll1.jpeg"class="collection_img"> -->
-            <div class="collection_inner_title">Сияние</div>
-            <div class="collection_inner_name">Kerama Marazzi</div>
-          </div>
-
-          <div class="collection_inner coll2">
-            <!-- <img src="/img/coll2.jpeg"class="collection_img"> -->
-            <div class="collection_inner_title">Вестанвинд</div>
-            <div class="collection_inner_name">LB-Ceramics</div>
-          </div>
-
-          <div class="collection_inner coll3">
-            <!-- <img src="/img/coll3.jpeg"class="collection_img"> -->
-            <div class="collection_inner_title">Rotterdam</div>
-            <div class="collection_inner_name">Gracia Ceramica</div>
-          </div>
-
-          <div class="collection_inner coll4">
-            <!-- <img src="/img/coll4.jpeg"class="collection_img"> -->
-            <div class="collection_inner_title">Rane</div>
-            <div class="collection_inner_name">Alma Ceramica</div>
-          </div>
-
-          <div class="collection_inner coll5">
-            <!-- <img src="/img/coll5.jpeg"class="collection_img"> -->
-            <div class="collection_inner_title">Гинардо</div>
-            <div class="collection_inner_name">Kerama Marazzi</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="hit">
-      <div class="container">
-        <div class="colletion_title hit_title">Хиты продаж</div>
-
-        <div class="hit_nav">
-          <a href="#" class="hit_nav_link">Любые товары</a>
-          <a href="#" class="hit_nav_link">Раковины</a>
-          <a href="#" class="hit_nav_link">Ванны</a>
-          <a href="#" class="hit_nav_link">Унитазы</a>
-          <a href="#" class="hit_nav_link">Душевые системы</a>
-          <a href="#" class="hit_nav_link">Смесители</a>
-          <a href="#" class="hit_nav_link">Зеркала</a>
-          <a href="#" class="hit_nav_link">Душевые кабины</a>
-          <a href="#" class="hit_nav_link">Стиральные машины</a>
+        <div class="loader">
+            <div class="loading"></div>
         </div>
 
-        <div class="hits">
-          <div class="hit_cards">
-            <div class="hit_cards_img hit_cards_img_1">
-              <div class="hit_cards_pro">хит</div>
-              <!-- <img src="/img/sink.png"> -->
-            </div>
-            <div class="hit_cards_bottom">
-              <div class="hit_cards_rating">
-                <div class="hit_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="hit_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="hit_cards_comment-num">2</div>
-                </div>
-              </div>
-              <a href="#" class="hit_cards_name">
-                Раковина Roca Debba 32799400Y, 60x48 см
-              </a>
-
-              <div class="hit_cards_country">Испания</div>
-              <div class="hit_cards_price">
-                <div class="hit_cards_price_left">2 601 ₽</div>
-                <button class="hit_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="hit_cards">
-            <div class="hit_cards_img hit_cards_img_2">
-              <div class="hit_cards_pro">хит</div>
-              <!-- <img src="/img/bath.png"> -->
-            </div>
-            <div class="hit_cards_bottom">
-              <div class="hit_cards_rating">
-                <div class="hit_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="hit_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="hit_cards_comment-num">12</div>
-                </div>
-              </div>
-              <a href="#" class="hit_cards_name">
-                Акриловая ванна AM.PM Bliss L 180х80 W53A-180-080W-ARB
-              </a>
-
-              <div class="hit_cards_country">Германия</div>
-              <div class="hit_cards_price">
-                <div class="hit_cards_price_left">26 990 ₽</div>
-                <button class="hit_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="hit_cards">
-            <div class="hit_cards_img hit_cards_img_3">
-              <div class="hit_cards_pro">хит</div>
-              <!-- <img src="/img/sink.png"> -->
-            </div>
-            <div class="hit_cards_bottom">
-              <div class="hit_cards_rating">
-                <div class="hit_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="hit_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="hit_cards_comment-num">24</div>
-                </div>
-              </div>
-              <a href="#" class="hit_cards_name">
-                Душевая система Raiber R0808, хром
-              </a>
-
-              <div class="hit_cards_country">Германия</div>
-              <div class="hit_cards_price">
-                <div class="hit_cards_price_left">12 207 ₽</div>
-                <button class="hit_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="hit_cards">
-            <div class="hit_cards_img hit_cards_img_4">
-              <div class="hit_cards_pro">хит</div>
-              <!-- <img src="/img/sink.png"> -->
-            </div>
-            <div class="hit_cards_bottom">
-              <div class="hit_cards_rating">
-                <div class="hit_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="hit_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="hit_cards_comment-num">4</div>
-                </div>
-              </div>
-              <a href="#" class="hit_cards_name">
-                Унитаз AM.PM Spirit V2.0 C708607SC компакт с сиденьем микролифт
-              </a>
-
-              <div class="hit_cards_country">Испания</div>
-              <div class="hit_cards_price">
-                <div class="hit_cards_price_left">14 764 ₽</div>
-                <button class="hit_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="hit_cards">
-            <div class="hit_cards_img hit_cards_img_5">
-              <div class="hit_cards_pro">хит</div>
-              <!-- <img src="/img/sink.png"> -->
-            </div>
-            <div class="hit_cards_bottom">
-              <div class="hit_cards_rating">
-                <div class="hit_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="hit_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="hit_cards_comment-num">10</div>
-                </div>
-              </div>
-              <a href="#" class="hit_cards_name">
-                Полотенцесушитель электрический Laris Кватро П7 40 x 60 см, 85
-                Вт, со...
-              </a>
-
-              <div class="hit_cards_country">Россия, Украина</div>
-              <div class="hit_cards_price">
-                <div class="hit_cards_price_left">12 730 ₽</div>
-                <button class="hit_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="hit_cards">
-            <div class="hit_cards_img hit_cards_img_4">
-              <div class="hit_cards_pro">хит</div>
-              <!-- <img src="/img/sink.png"> -->
-            </div>
-            <div class="hit_cards_bottom">
-              <div class="hit_cards_rating">
-                <div class="hit_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="hit_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="hit_cards_comment-num">4</div>
-                </div>
-              </div>
-              <a href="#" class="hit_cards_name">
-                Унитаз AM.PM Spirit V2.0 C708607SC компакт с сиденьем микролифт
-              </a>
-              <div class="hit_cards_country">Испания</div>
-              <div class="hit_cards_price">
-                <div class="hit_cards_price_left">14 764 ₽</div>
-                <button class="hit_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="hit_cards">
-            <div class="hit_cards_img hit_cards_img_5">
-              <div class="hit_cards_pro">хит</div>
-              <!-- <img src="/img/sink.png"> -->
-            </div>
-            <div class="hit_cards_bottom">
-              <div class="hit_cards_rating">
-                <div class="hit_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="hit_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="hit_cards_comment-num">10</div>
-                </div>
-              </div>
-              <a href="#" class="hit_cards_name">
-                Полотенцесушитель электрический Laris Кватро П7 40 x 60 см, 85
-                Вт, со...
-              </a>
-
-              <div class="hit_cards_country">Россия, Украина</div>
-              <div class="hit_cards_price">
-                <div class="hit_cards_price_left">12 730 ₽</div>
-                <button class="hit_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="promotion">
-      <div class="container">
-        <div class="colletion_title promotion_title">Акции</div>
-
-        <div class="promotion_nav">
-          <a href="#" class="promotion_nav_link">Любые товары</a>
-          <a href="#" class="promotion_nav_link">Смесители</a>
-          <a href="#" class="promotion_nav_link">Полотенцесушители</a>
-          <a href="#" class="promotion_nav_link">Биде</a>
-          <a href="#" class="promotion_nav_link">Душевые системы</a>
-          <a href="#" class="promotion_nav_link">Ванны</a>
-          <a href="#" class="promotion_nav_link">Унитазы</a>
-          <a href="#" class="promotion_nav_link">Отопители</a>
-          <a href="#" class="promotion_nav_link">Посудомоечные машины</a>
-        </div>
-
-        <div class="promotions">
-          <div class="promotion_cards">
-            <div class="promotion_cards_img promotion_cards_img_1">
-              <div class="promotion_cards_pro">акции</div>
-              <!-- <img src="/img/sink.png"> -->
-            </div>
-            <div class="promotion_cards_bottom">
-              <div class="promotion_cards_rating">
-                <div class="promotion_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="promotion_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="promotion_cards_comment-num">2</div>
-                </div>
-              </div>
-              <a href="#" class="promotion_cards_name">
-                Смеситель Hansgrohe Logis 71070000 для раковины
-              </a>
-
-              <div class="promotion_cards_country">Германия</div>
-              <div class="promotion_cards_price">
-                <div class="promotion_cards_price_flex">
-                  <div class="promotion_cards_price_left">6 050 ₽</div>
-                  <div class="promotion_cards_price_left_crossOut">7 601 ₽</div>
-                </div>
-                <button class="promotion_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="promotion_cards">
-            <div class="promotion_cards_img promotion_cards_img_2">
-              <div class="promotion_cards_pro">акции</div>
-              <!-- <img src="/img/bath.png"> -->
-            </div>
-            <div class="promotion_cards_bottom">
-              <div class="promotion_cards_rating">
-                <div class="promotion_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="promotion_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="promotion_cards_comment-num">12</div>
-                </div>
-              </div>
-              <a href="#" class="promotion_cards_name">
-                Душевая кабина Black&White Galaxy G8800, 80 x 110 см
-              </a>
-
-              <div class="promotion_cards_country">Германия</div>
-              <div class="promotion_cards_price">
-                <div class="promotion_cards_price_flex">
-                  <div class="promotion_cards_price_left">84 000 ₽</div>
-                  <div class="promotion_cards_price_left_crossOut">
-                    90 580 ₽
-                  </div>
-                </div>
-                <button class="promotion_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="promotion_cards">
-            <div class="promotion_cards_img promotion_cards_img_3">
-              <div class="promotion_cards_pro">акции</div>
-              <!-- <img src="/img/sink.png"> -->
-            </div>
-            <div class="promotion_cards_bottom">
-              <div class="promotion_cards_rating">
-                <div class="promotion_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="promotion_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="promotion_cards_comment-num">24</div>
-                </div>
-              </div>
-              <a href="#" class="promotion_cards_name">
-                Ванна акриловая Am.Pm Spirit W72A-160L100W-A2, 160 x 100 см,
-                левосторонняя
-              </a>
-
-              <div class="promotion_cards_country">Германия</div>
-              <div class="promotion_cards_price">
-                <div class="promotion_cards_price_flex">
-                  <div class="promotion_cards_price_left">29 990 ₽</div>
-                  <div class="promotion_cards_price_left_crossOut">
-                    36 900 ₽
-                  </div>
-                </div>
-                <button class="promotion_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="promotion_cards">
-            <div class="promotion_cards_img promotion_cards_img_4">
-              <div class="promotion_cards_pro">акции</div>
-              <!-- <img src="/img/sink.png"> -->
-            </div>
-            <div class="promotion_cards_bottom">
-              <div class="promotion_cards_rating">
-                <div class="promotion_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="promotion_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="promotion_cards_comment-num">4</div>
-                </div>
-              </div>
-              <a href="#" class="promotion_cards_name">
-                Унитаз Laguraty 8074 крышка микролифт, с функцией биде
-              </a>
-
-              <div class="promotion_cards_country">Китай</div>
-              <div class="promotion_cards_price">
-                <div class="promotion_cards_price_flex">
-                  <div class="promotion_cards_price_left">32 108 ₽</div>
-                  <div class="promotion_cards_price_left_crossOut">
-                    34 900 ₽
-                  </div>
-                </div>
-                <button class="promotion_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="promotion_cards">
-            <div class="promotion_cards_img promotion_cards_img_5">
-              <div class="promotion_cards_pro">акции</div>
-              <!-- <img src="/img/sink.png"> -->
-            </div>
-            <div class="promotion_cards_bottom">
-              <div class="promotion_cards_rating">
-                <div class="promotion_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="promotion_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="promotion_cards_comment-num">10</div>
-                </div>
-              </div>
-              <a href="#" class="promotion_cards_name">
-                Раковина Laufen Palace 120 см 8.1170.4.000.104.1
-              </a>
-
-              <div class="promotion_cards_country">Швейцария</div>
-              <div class="promotion_cards_price">
-                <div class="promotion_cards_price_flex">
-                  <div class="promotion_cards_price_left">53 458 ₽</div>
-                  <div class="promotion_cards_price_left_crossOut">
-                    58 601 ₽
-                  </div>
-                </div>
-                <button class="promotion_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="promotion_cards">
-            <div class="promotion_cards_img promotion_cards_img_4">
-              <div class="promotion_cards_pro">акции</div>
-              <!-- <img src="/img/sink.png"> -->
-            </div>
-            <div class="promotion_cards_bottom">
-              <div class="promotion_cards_rating">
-                <div class="promotion_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="promotion_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="promotion_cards_comment-num">4</div>
-                </div>
-              </div>
-              <a href="#" class="promotion_cards_name">
-                Унитаз AM.PM Spirit V2.0 C708607SC компакт с сиденьем микролифт
-              </a>
-
-              <div class="promotion_cards_country">Испания</div>
-              <div class="promotion_cards_price">
-                <div class="promotion_cards_price_flex">
-                  <div class="promotion_cards_price_left">12 730 ₽</div>
-                  <div class="promotion_cards_price_left_crossOut">
-                    58 601 ₽
-                  </div>
-                </div>
-                <button class="promotion_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="promotion_cards">
-            <div class="promotion_cards_img promotion_cards_img_5">
-              <div class="promotion_cards_pro">акции</div>
-              <!-- <img src="/img/sink.png"> -->
-            </div>
-            <div class="promotion_cards_bottom">
-              <div class="promotion_cards_rating">
-                <div class="promotion_cards_star">
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                  <img src="/icons/star.svg" />
-                </div>
-                <div class="promotion_cards_comment">
-                  <img src="/icons/comment.svg" />
-                  <div class="promotion_cards_comment-num">10</div>
-                </div>
-              </div>
-              <a href="#" class="promotion_cards_name">
-                Полотенцесушитель электрический Laris Кватро П7 40 x 60 см, 85
-                Вт, со...
-              </a>
-
-              <div class="promotion_cards_country">Россия, Украина</div>
-              <div class="promotion_cards_price">
-                <div class="promotion_cards_price_flex">
-                  <div class="promotion_cards_price_left">12 730 ₽</div>
-                  <div class="promotion_cards_price_left_crossOut">
-                    58 601 ₽
-                  </div>
-                </div>
-                <button class="promotion_cards_price_right">В КОРЗИНУ</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="brends">
-      <div class="container">
-        <div class="brends_banner">ЕЩЕ ОДИН БАННЕР</div>
-        <div class="colletion_title brends_title">Популярные бренды</div>
-
-        <div class="brends_container">
-          <div class="brends_inner">
-            <img src="/icons/brend_1.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_2.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_3.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_4.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_5.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_6.svg" class="brends_inner_img" />
-          </div>
-
-          <div class="brends_inner">
-            <img src="/icons/brend_7.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_8.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_9.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_10.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_11.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_12.svg" class="brends_inner_img" />
-          </div>
-
-          <div class="brends_inner">
-            <img src="/icons/brend_13.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_14.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_15.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_16.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_17.svg" class="brends_inner_img" />
-          </div>
-          <div class="brends_inner">
-            <img src="/icons/brend_18.svg" class="brends_inner_img" />
-          </div>
-        </div>
-
-        <div class="article">
-          <div class="colletion_title article_title">Статьи</div>
-
-          <div class="article_wrapper">
-            	<div class="article_inner">
-					<div class="article_img">
-						<img src="/img/article_img-1.jpeg" />
-				  	</div>
-				  	<div class="article_descr">
-						Актуальные и необычные аксессуары для ванной комнаты
-				  	</div>
-				</div>
-
-				<div class="article_inner">
-					<div class="article_img">
-						<img src="/img/article_img-2.jpeg" />
-					</div>
-					<div class="article_descr">
-						Какой температуры должна быть горячая вода?
-					</div>
-				</div>
-
-            <div class="article_inner">
-				<div class="article_img">
-					<img src="/img/article_img-3.jpeg" />
-				</div>
-				<div class="article_descr">
-					Конденсат на бачке унитаза: причины появления и способы устранения
-				</div>
-			</div>
-
-            <div class="article_inner">
-				<div class="article_img">
-					<img src="/img/article_img-4.jpeg" />
-				</div>
-				<div class="article_descr">
-					Анаэробный герметик для резьбовых соединений
-				</div>
-			</div>
-
-            <div class="article_inner">
-                <div class="article_img">
-                    <img src="/img/article_img-1.jpeg" />
-                  </div>
-                  <div class="article_descr">
-                    Актуальные и необычные аксессуары для ванной комнаты
-                  </div>
-            </div>
-            
-            <div class="article_inner">
-                <div class="article_img">
-                    <img src="/img/article_img-2.jpeg" />
-                </div>
-                <div class="article_descr">
-                    Какой температуры должна быть горячая вода?
-                </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!--finishContainer-->
-    </section>
-
-    <div class="loader">
-      <div class="loading"></div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="/js/slick.min.js"></script>
-    <script src="/js/script.js"></script>
-  </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="/js/slick.min.js"></script>
+        <script src="/js/script.js"></script>
+    </body>
 </html>
