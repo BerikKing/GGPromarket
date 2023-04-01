@@ -31,14 +31,31 @@ setTimeout(function(){
 },3000)
 
 let hits = $('.hits');
+let pro = $('.promotions');
+let art = $('.article_wrapper');
 
+pro.slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+
+});
 hits.slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
-  arrows: true,
   autoplaySpeed: 1000,
+
+});
+art.slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  // autoplay: true,
+  // autoplaySpeed: 2000,
 
 });
 // $('.hits').slick({
