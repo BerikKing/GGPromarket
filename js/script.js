@@ -18,14 +18,16 @@ prevBtn.addEventListener("click", () => {
   }
 });
 
-let loader = document.querySelector(".loader");
+let loader = document.querySelector('.loader');
 
-// window.addEventListener('load',function (){
-//   loader.style.display = "none";
-// })
+
+window.addEventListener('load', function () {
+    loader.style.display = 'none';
+})
+
 setTimeout(function () {
-  loader.style.display = "none";
-}, 3000);
+    loader.style.display = 'none';
+}, 3000)
 
 let hits = $(".hits");
 let pro = $(".promotions");
@@ -42,7 +44,7 @@ hits.slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 1000,
 });
 article.slick({
@@ -52,6 +54,8 @@ article.slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
+
+
 
 // $('.hits').slick({
 //   infinite: true,

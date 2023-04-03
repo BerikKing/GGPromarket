@@ -436,6 +436,23 @@ nav a {
 	height: 288px;
 	padding: 20px 0 0 20px;
 }
+.hit_cards_img button {
+	display: none;
+	transition: all 0.5s linear;
+}
+.hit_cards_img:hover button {
+	background: rgba(44, 123, 199, 0.5);
+	position: fixed;
+	top: 137px;
+	background: #1781e381;
+	padding: 13px 33px;
+	border-radius: 5px;
+	border: none;
+	color: var(--white);
+	margin-left: 14px;
+	transition: all 0.3 linear;
+	display: block;
+}
 .hit_cards_img_1 {
 	background: url(/img/sink.png) no-repeat center center/cover;
 }
@@ -476,7 +493,9 @@ nav a {
 	border-right: 0.01px solid var(--black);
 	border-left: 0.01px solid var(--black);
 }
-
+.hit_cards_name:hover {
+	color: #1061ab;
+}
 .hit_cards_pro,
 .promotion_cards_pro {
 	width: 49px;
@@ -530,8 +549,8 @@ nav a {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.hit_cards_name:hover,
-.hit_cards_name:hover {
+
+.promotion_cards_name:hover {
 	color: #1061ab;
 }
 .hit_cards_price,
@@ -564,6 +583,9 @@ nav a {
 	color: var(--blue2);
 	border-radius: 5px;
 	transition: all 0.3s ease-in;
+}
+.hit_cards_comment-num {
+	margin-left: 5px;
 }
 .hit_cards_price_right:hover,
 .promotion_cards_price_right:hover {
@@ -821,6 +843,35 @@ footer {
 .copy_not_text span {
 	color: #1061AB;
 }
-/* .loader {
+.loader {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-} */
+
+.loading {
+    width: 300px;
+    height: 300px;
+    border-top: 5px solid white;
+    border-radius: 50%;
+    animation: anim .7s linear infinite;
+}
+
+
+/* 0turn = 0deg  */
+/* 1turn = 360deg */
+
+@keyframes anim {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
