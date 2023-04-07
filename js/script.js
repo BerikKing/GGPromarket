@@ -85,6 +85,7 @@ btn.forEach((item, index) => {
         if (img[index]) {
             modal.classList.add("show");
             modalImg.src = img[index].src;
+            console.log(index);
         } else {
             return null;
         }
