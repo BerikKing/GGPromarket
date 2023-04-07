@@ -1,3 +1,11 @@
+// menu for mobile
+$(document).ready(function () {
+    $(".mobile-menu-toggle").click(function () {
+        $(".mobile-menu").slideToggle();
+        $(".burger-icon, .close-icon").toggleClass("animate");
+    });
+});
+
 const sliderContainer = document.querySelector(".slider-container");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
@@ -36,14 +44,14 @@ pro.slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1000,
 });
 hits.slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1000,
 });
 article.slick({
@@ -59,3 +67,44 @@ article.slick({
 //   slidesToShow: 4,
 //   slidesToScroll: 3
 // });
+
+let modal = document.querySelector(".modal");
+let modal_inner = document.querySelector(".modal_inner");
+let img = document.querySelectorAll(".hit_cards_png");
+let btn = document.querySelectorAll(".hit_cards_btn");
+let btnClose = document.querySelector(".btn_close");
+let modalImg = document.querySelector(".modal_img");
+let city = document.querySelector(".city");
+let cityName = document.querySelector(".city_names");
+
+
+
+btn.forEach((item, index) => {
+    item.addEventListener("click", function () {
+        if (img[index]) {
+            modal.classList.add("show");
+            modalImg.src = img[1 + index].src;
+        } else {
+            return null;
+        }
+    });
+});
+
+btnClose.addEventListener("click", function (e) {
+    modal.classList.remove("show");
+});
+
+window.addEventListener("click", function (e) {
+    if (e.target === modal_inner) {
+        modal.classList.remove("show");
+    }
+});
+
+city.addEventListener("click", function () {
+    document.querySelector(".city_names").classList.toggle("show");
+});
+
+// setTimeout(function () {
+//   document.querySelector(".overlay").classList.add("show");
+//   document.body.classList.add("no-scroll");
+// }, 3000);
