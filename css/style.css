@@ -58,13 +58,15 @@ header {
     position: absolute;
     top: 36px;
     left: -14px;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    min-height: 100px;
     padding: 20px;
-    z-index: 1000;
+    z-index: 100000;
     background: var(--lightblue2);
     border-radius: 7px;
-    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01),
+        0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09),
+        0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
     display: none;
 }
 .city_names::after {
@@ -76,17 +78,32 @@ header {
     position: absolute;
     top: -24px;
 }
-.city_names .show {
+.city_names.show {
     display: block;
 }
 .city_name {
-    margin-left: 8px;
+    margin-top: 7px;
     color: var(--blue);
     border-bottom: 1px dotted var(--blue);
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
 }
+.city_names_opacity {
+    width: 100%;
+    min-width: 1900px;
+    height: 1000px;
+    background-color: black;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    display: none;
+}
+
+.city_names_opacity.show {
+    display: block;
+}
+
 .contact a {
     text-decoration: none;
     font-weight: 500;
@@ -535,6 +552,7 @@ nav a {
     z-index: 1000;
 }
 .hit_cards_inner {
+    margin-top: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -597,7 +615,7 @@ nav a {
 .hit_cards_pro {
     position: absolute;
     top: 10px;
-    left: 15px;
+    left: 24px;
     z-index: 1;
 }
 .promotion_cards_pro {
@@ -907,6 +925,12 @@ footer {
     width: 147px;
     display: flex;
     justify-content: space-between;
+}
+.social_img img {
+    fill: #000000;
+}
+.social_img:hover img {
+    color: rgba(59, 185, 184, 0.8);
 }
 .footer_wrapper_4 {
     display: flex;

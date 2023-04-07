@@ -75,15 +75,16 @@ let btn = document.querySelectorAll(".hit_cards_btn");
 let btnClose = document.querySelector(".btn_close");
 let modalImg = document.querySelector(".modal_img");
 let city = document.querySelector(".city");
-let cityName = document.querySelector(".city_names");
-
-
+let cityNames = document.querySelector(".city_names");
+let cityName = document.querySelectorAll(".city_name");
+let cityNamesOpacity = document.querySelector(".city_names_opacity");
+let cityNameGlobal = document.querySelector(".city_name_global");
 
 btn.forEach((item, index) => {
     item.addEventListener("click", function () {
         if (img[index]) {
             modal.classList.add("show");
-            modalImg.src = img[1 + index].src;
+            modalImg.src = img[index].src;
         } else {
             return null;
         }
@@ -100,8 +101,27 @@ window.addEventListener("click", function (e) {
     }
 });
 
-city.addEventListener("click", function () {
-    document.querySelector(".city_names").classList.toggle("show");
+cityNameGlobal.addEventListener("click", function (e) {
+    e.stopPropagation();
+    document.querySelector(".city_names").classList.add("show");
+    cityNamesOpacity.classList.toggle("show");
+    cityNames.classList.add("show");
+});
+cityName.forEach((item, index) => {
+    item.addEventListener("click", function () {
+        cityNameGlobal.innerHTML = cityName[index].innerHTML;
+        // console.log(cityName[index]);
+        cityNames.classList.remove("show");
+    });
+});
+
+window.addEventListener("click", function (e) {
+    if (e.target === cityNamesOpacity) {
+        document.querySelector(".city_names").classList.remove("show");
+        cityNamesOpacity.classList.remove("show");
+    }
+
+    // console.log(e.target);
 });
 
 // setTimeout(function () {
