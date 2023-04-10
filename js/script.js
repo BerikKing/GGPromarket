@@ -102,6 +102,7 @@ window.addEventListener("click", function (e) {
     }
 });
 
+// города выбрать
 cityNameGlobal.addEventListener("click", function (e) {
     e.stopPropagation();
     document.querySelector(".city_names").classList.add("show");
@@ -129,3 +130,45 @@ window.addEventListener("click", function (e) {
 //   document.querySelector(".overlay").classList.add("show");
 //   document.body.classList.add("no-scroll");
 // }, 3000);
+let modalCTA = document.querySelector(".modal_cta");
+let callText = document.querySelectorAll(".call");
+let modalWrap = document.querySelector(".modal_cta_wrapper");
+console.log(callText);
+
+callText.forEach((item, index) => {
+    item.addEventListener("click", function () {
+        if (index || index === 0) {
+            modalCTA.classList.add("show");
+            console.log(index);
+        } else {
+            return null;
+        }
+    });
+});
+
+window.addEventListener("click", function (e) {
+    if (e.target === modalWrap) {
+        modalCTA.classList.remove("show");
+    }
+});
+
+// маска телефона
+let element = document.getElementById("phone");
+let email = document.getElementById("email");
+
+email.addEventListener("input", function (e) {
+    if (
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+            e.target.value
+        )
+    ) {
+        console.log("Yes");
+    } else {
+        console.log("Nos");
+    }
+});
+
+let maskOptions = {
+    mask: "+{7}(000)000-00-00",
+};
+let mask = IMask(element, maskOptions);

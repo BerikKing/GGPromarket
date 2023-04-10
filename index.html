@@ -24,22 +24,21 @@
                     <div class="city">
                         <img src="/icons/location.svg" alt="location" />
                         <div class="city_name_global">Москва</div>
-                        <div class="city_names_opacity">
+                        <div class="city_names_opacity"></div>
+                        <div class="city_names">
+                            <div class="city_name">Москва</div>
+                            <div class="city_name">Астана</div>
+                            <div class="city_name">Алматы</div>
+                            <div class="city_name">Шымкент</div>
+                            <div class="city_name">Тараз</div>
+                            <div class="city_name">Ақтобе</div>
                         </div>
-                            <div class="city_names">
-                                <div class="city_name">Москва</div>
-                                <div class="city_name">Астана</div>
-                                <div class="city_name">Алматы</div>
-                                <div class="city_name">Шымкент</div>
-                                <div class="city_name">Тараз</div>
-                                <div class="city_name">Ақтобе</div>
-                            </div>
                     </div>
 
                     <div class="contact">
                         <a href="tel:84950183210">8 495 018-32-10</a>
                     </div>
-                    <div class="call">
+                    <div class="call"">
                         <div class="call_img_inner">
                             <img
                                 class="call_img"
@@ -482,7 +481,9 @@
                     <div class="hit_cards">
                         <div class="hit_cards_img hit_cards_img_6">
                             <div class="hit_cards_pro">хит</div>
-                            <button class="hit_cards_btn">БЫСТРЫЙ ПРОСМОТР</button>
+                            <button class="hit_cards_btn">
+                                БЫСТРЫЙ ПРОСМОТР
+                            </button>
                             <div class="hit_cards_inner">
                                 <img
                                     class="hit_cards_png"
@@ -1144,7 +1145,7 @@
                         <a class="footer_phone" href="tel:84950183210"
                             >8 495 018-32-10</a
                         >
-                        <button class="footer_btn">ЗАКАЗАТЬ ЗВОНОК</button>
+                        <button class="footer_btn call">ЗАКАЗАТЬ ЗВОНОК</button>
                         <div class="footer_workMode">Пн-Пт: 10:00 — 20:00</div>
                         <div class="footer_workMode">Сб: 10:00 — 18:00</div>
                         <div class="footer_workMode">Вс: выходной</div>
@@ -1197,9 +1198,41 @@
         <div class="modal">
             <div class="modal_inner">
                 <div class="modal_content">
-                    <img class="modal_img" src="img/bath.png" />
+                    <img class="modal_img" src="" />
 
                     <button class="btn_close">&times;</button>
+                </div>
+            </div>
+        </div>
+        <!-- modal for call to action -->
+        <div class="modal_cta">
+            <div class="modal_cta_wrapper">
+                <div class="modal_cta_form">
+                    <div class="modal_cta_text">
+                        Оставьте заявку и получите консультацию бесплатно
+                    </div>
+                    <div class="form">
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Alex"
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="example@email.com"
+                        />
+                        <input
+                            type="text"
+                            name="phone"
+                            id="phone"
+                            placeholder="+7(700)000-00-00"
+                        />
+                        <!-- <input type="button" value="Попробуйте бесплатно"/> -->
+                        <button class="modal_cta_btn">Попробуйте бесплатно</button>
+                </div>
                 </div>
             </div>
         </div>
@@ -1208,6 +1241,7 @@
             <div class="loading"></div>
         </div>
 
+        <script src="https://unpkg.com/imask"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/js/slick.min.js"></script>
         <script src="/js/script.js"></script>
