@@ -133,13 +133,13 @@ window.addEventListener("click", function (e) {
 let modalCTA = document.querySelector(".modal_cta");
 let callText = document.querySelectorAll(".call");
 let modalWrap = document.querySelector(".modal_cta_wrapper");
-console.log(callText);
+// console.log(callText);
 
 callText.forEach((item, index) => {
     item.addEventListener("click", function () {
         if (index || index === 0) {
             modalCTA.classList.add("show");
-            console.log(index);
+            // console.log(index);
         } else {
             return null;
         }
@@ -154,21 +154,41 @@ window.addEventListener("click", function (e) {
 
 // маска телефона
 let element = document.getElementById("phone");
-let email = document.getElementById("email");
+// let email = document.getElementById("email");
 
-email.addEventListener("input", function (e) {
-    if (
-        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-            e.target.value
-        )
-    ) {
-        console.log("Yes");
-    } else {
-        console.log("Nos");
-    }
-});
+// email.addEventListener("input", function (e) {
+//     if (
+//         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+//             e.target.value
+//         )
+//     ) {
+//         console.log("Yes");
+//     } else {
+//         console.log("Nos");
+//     }
+// });
 
 let maskOptions = {
     mask: "+{7}(000)000-00-00",
 };
 let mask = IMask(element, maskOptions);
+
+// GET-POST
+
+let form = document.querySelector(".form");
+
+form.addEventListener("submit", async function (event) {
+    event.preventDefault(); //refresh(перезгрузка алып тастайды)
+
+    let formData = new formData(form);
+
+    let infoUser = Object.fromEntries(formData);
+    await fetch("http://localhost:3000/user"),
+        {
+            method: "POST",
+            body: JSON.stringify(infoUser),
+            headers: {
+                "Content-Type": "application/json",
+            },
+        };
+});
