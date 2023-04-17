@@ -1052,7 +1052,6 @@ footer {
 .modal_cta {
     position: fixed;
     display: none;
-
     top: 0;
     left: 0;
     z-index: 10000;
@@ -1130,7 +1129,10 @@ input[type="text"], input[type="email"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: none; */
+    display: none;
+}
+.modal_thanks.show {
+    display: block;
 }
 .modal_thanks_form {
     width: 400px;

@@ -8,7 +8,7 @@ callText.forEach((item, index) => {
     item.addEventListener("click", function () {
         if (index || index === 0) {
             modalCTA.classList.add("show");
-            // console.log(index);
+            console.log(index);
         } else {
             return null;
         }

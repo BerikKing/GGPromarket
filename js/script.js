@@ -43,4 +43,5 @@ import { maskOptions } from "./mask.js";
 // GET-POST
 
 import { form } from "./form.js";
+import { thanks } from "./form.js"
 
